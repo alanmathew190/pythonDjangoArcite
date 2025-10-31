@@ -20,5 +20,9 @@ from student import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello/',views.print_hello)
+    path('hello/',views.print_hello),
+    path('greet/',views.greet),
+    path('demo/',views.demo),
+    path('tags/',views.tags),
+    path('filter/',views.t_filter),
 ]

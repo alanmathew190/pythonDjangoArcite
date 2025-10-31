@@ -1,0 +1,24 @@
+
+<h1>Subjects list</h1>
+
+<ul>
+    {% for subject in subjects %}
+    <li>{{subject}}</li>
+    {%endfor %}
+
+
+</ul>
+<h1>Friuts</h1>
+<ul>
+    
+    {% for fruit in fruits %}
+    <li>{{fruit}}</li>
+    {%endfor %}
+
+</ul>
+<h1>{{marks}}</h1>
+{% if marks >= 50 %}
+    <p>Result: Pass</p>
+{% else %}
+    <p>Result: Fail</p>
+{% endif %}
